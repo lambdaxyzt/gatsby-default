@@ -18,10 +18,15 @@
     "gatsby-source-filesystem": "^4.1.2",
     "gatsby-transformer-json": "^4.1.0",
     "gatsby-transformer-sharp": "^4.1.0",
+    "node-sass": "^6.0.1",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.43.5",
+    "serve": "^13.0.2",
+    "swiper": "^7.3.1"
   },
   "devDependencies": {
     "prettier": "^2.4.1"
@@ -45,5 +50,6 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }
