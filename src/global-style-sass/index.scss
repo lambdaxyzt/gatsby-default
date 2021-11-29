@@ -1,0 +1,24 @@
+@import "./reset.scss";
+@import "/node_modules/normalize.css/normalize.css";
+@import "./font.scss";
+@import "./variable.scss";
+@import "./breakpoint.scss";
+@import "./a_tag.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'roboto-regular' , 'Courier New', Courier, monospace;
+}
+
+strong {
+  font-weight: bold;
+}
