@@ -1,0 +1,16 @@
+/* TEAM */
+
+Developer : Lambdaxyzt
+
+Developer Email : lambdaxyzt@gmail.com
+
+Developer Website : lambdaxyzt.ir
+
+
+/* SITE */
+
+Standards: HTML, CSS , Javascript
+
+Technologies : React.JS , Gatsby.JS
+
+Language: fa-IR
