@@ -23,22 +23,36 @@ module.exports = {
     {
         resolve: `gatsby-source-filesystem`,
         options: {
-            name: `images`,
+            name: `image`,
+            path: `${__dirname}/src/asset/image`,
+        },
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `data`,
             path: `${__dirname}/src/data`,
         },
     },
     {
+      resolve: `gatsby-plugin-styled-jsx`,
+      options: {
+          jsxPlugins:
+              ["@styled-jsx/plugin-sass"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gatsby-default`,
+        short_name: `default`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/data/image/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/asset/image/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

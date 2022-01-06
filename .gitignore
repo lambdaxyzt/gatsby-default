@@ -69,6 +69,7 @@ yarn-error.log
 .yarn-integrity
 .yarn/cache
 
+
 # Yarn 3
 .pnp.*
 .yarn/*
@@ -78,3 +79,4 @@ yarn-error.log
 !.yarn/sdks
 !.yarn/versions
 
+deploy.mjs
