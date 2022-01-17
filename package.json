@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2",
     "dotenv": "^10.0.0",
     "gatsby": "^4.1.3",
     "gatsby-plugin-gatsby-cloud": "^4.1.1",
@@ -28,11 +29,10 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.43.5",
     "serve": "^13.0.2",
-    "swiper": "^7.3.1",
-    "@styled-jsx/plugin-sass": "^4.0.2",
     "styled-jsx": "^4.0.1",
     "styled-jsx-plugin-postcss": "^4.0.1",
     "styled-jsx-plugin-sass": "^1.0.0",
+    "swiper": "^7.3.1"
   },
   "devDependencies": {
     "@svgr/cli": "^6.0.0",
@@ -64,5 +64,5 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.1"
 }
