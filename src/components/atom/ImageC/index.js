@@ -3,7 +3,7 @@ import * as styles from "./index.module.scss"
 import {graphql, useStaticQuery} from "gatsby";
 import {GatsbyImage} from "gatsby-plugin-image";
 
-const ImageC = (props) => {
+const Index = (props) => {
     const query = useStaticQuery(graphql`
         query Icons {
             allFile{
@@ -41,4 +41,4 @@ const ImageC = (props) => {
         )
     }
 }
-export default ImageC;
+export default Index;
