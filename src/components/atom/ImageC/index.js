@@ -1,6 +1,7 @@
 import * as React from "react"
 import {graphql, useStaticQuery} from "gatsby";
 import {GatsbyImage} from "gatsby-plugin-image";
+
 const Index = (props) => {
     const query = useStaticQuery(graphql`
         query Icons {
@@ -16,18 +17,54 @@ const Index = (props) => {
             }
         }
     `)
+    React.useEffect(() => {
+        const html = document.querySelector('html')
+        const body = document.querySelector('body')
+    })
     const icons = query.allFile.nodes
-    const icon = icons.filter(item => item.name == (props.imageName || "gatsby-icon"))[0]
+    let icon = icons.filter(item => item.name == (props.imageName || "default"))[0];
+    const default_ = icons.filter(item => item.name == "default")[0];
+    if (!icon){
+        icon = default_;
+    }
+    if (props.type == "background") {
+        console.log(icon.publicURL)
+        return (
+            <>
+                <style jsx>{`
+                  .root {
+                    background: url(${icon.publicURL});
+                  }
+                `}</style>
+
+                <div className="root"
+                     style={{
+                         height: props.height ? props.height : "100%",
+                         width: props.width ? props.width : "100%",
+                         backgroundRepeat: "no-repeat",
+                         backgroundAttachment: "fixed",
+                         backgroundSize: "cover",
+                     }}
+                >
+
+                </div>
+            </>
+        )
+    }
     return (
         <GatsbyImage
             image={icon.childImageSharp.gatsbyImageData}
             style={{
-                height:"100%",
-                width:"100%",
+                height: props.height ? props.height : "100%",
+                width: props.width ? props.width : "100%",
+
             }}
             imgStyle={{
-                objectFit:"cover"
+                objectFit: props.objectFit ? props.objectFit : "cover",
+                borderRadius: props.borderRadius ? props.borderRadius : null,
+                overflow: "hidden",
             }}
+            alt={props.alt}
 
         />
     )

@@ -46,6 +46,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
@@ -54,10 +55,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "svg:icon:delete": "rimraf ./src/data/icon-svg-react",
     "svg:icon:icon": "svgr src/asset/icon-svg --out-dir ./src/data/icon-svg-react",
-    "build": "gatsby build",
     "svgr": "run-s \"svg:icon:*\"",
-    "build:deploy": "node deploy.js",
-    "deploy": "run-s \"build:*\""
+    "upload": "node deploy.mjs",
+    "deploy": "run-s  clean build upload"
   },
   "repository": {
     "type": "git",
