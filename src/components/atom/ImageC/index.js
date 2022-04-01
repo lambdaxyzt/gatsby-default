@@ -24,7 +24,7 @@ const Index = (props) => {
     const icons = query.allFile.nodes
     let icon = icons.filter(item => item.name == (props.imageName || "default"))[0];
     const default_ = icons.filter(item => item.name == "default")[0];
-    if (!icon){
+    if (!icon) {
         icon = default_;
     }
     if (props.type == "background") {
