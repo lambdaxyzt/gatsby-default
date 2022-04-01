@@ -1,10 +1,10 @@
 /* TEAM */
 
-Developer : Lambdaxyzt
+Developer :
 
-Developer Email : lambdaxyzt@gmail.com
+Developer Email :
 
-Developer Website : lambdaxyzt.ir
+Developer Website :
 
 
 /* SITE */
