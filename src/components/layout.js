@@ -1,7 +1,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import 'src/global-style-sass/index.scss'
+import 'src/global-style-CSS/index.scss'
 
 const Layout = ({ children }) => {
 
